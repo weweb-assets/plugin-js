@@ -5,7 +5,7 @@
                 type="text"
                 name="js-code"
                 placeholder="return [{ test: true }]"
-                :value="endpoint.limit"
+                :value="content.js"
                 @input="updateContent('js', $event)"
                 large
             />
