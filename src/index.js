@@ -9,7 +9,7 @@ export default {
         Plugin API
     \================================================================================================*/
     onLoad() {
-        Vue.prototype.$pluginJS = this;
+        Vue.prototype.$pluginJSRequest = this;
     },
     /*=============================================m_ÔÔ_m=============================================\
         Collection API

@@ -1,5 +1,5 @@
 <template>
-    <div class="js-collection-edit">
+    <div class="js-request-collection-edit">
         <wwEditorFormRow label="Javascript code">
             <wwCodeEditor name="js-code" :value="content.js" @input="setProp('js', $event)" />
         </wwEditorFormRow>
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.js-collection-edit {
+.js-request-collection-edit {
     display: flex;
     flex-direction: column;
 }

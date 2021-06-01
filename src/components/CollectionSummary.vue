@@ -1,6 +1,6 @@
 <template>
-    <div class="js-collection-summary">
-        <div class="js-collection-summary__elem caption-s">JS: {{ config.js || '-' }}</div>
+    <div class="js-request-collection-summary">
+        <div class="js-request-collection-summary__elem caption-s">JS: {{ config.js || '-' }}</div>
     </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.js-collection-summary {
+.js-request-collection-summary {
     &__elem {
         margin-bottom: var(--ww-spacing-01);
     }
