@@ -1,14 +1,7 @@
 <template>
     <div class="js-collection-edit">
         <wwEditorFormRow label="Javascript code">
-            <wwEditorFormInput
-                type="text"
-                name="js-code"
-                placeholder="return [{ test: true }]"
-                :value="content.js"
-                @input="updateContent('js', $event)"
-                large
-            />
+            <wwCodeEditor name="js-code" :value="content.js" @input="updateContent('js', $event)" />
         </wwEditorFormRow>
     </div>
 </template>
@@ -36,7 +29,7 @@ export default {
         },
         content() {
             return {
-                js: undefined,
+                js: 'return { test: "my code is always working" }',
                 ...this.config,
             };
         },
@@ -45,6 +38,9 @@ export default {
         updateContent(key, value) {
             this.$emit('update-config', { ...this.content, [key]: value });
         },
+    },
+    mounted() {
+        this.updateContent('js', this.content.js);
     },
 };
 </script>

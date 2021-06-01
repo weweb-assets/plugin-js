@@ -17,8 +17,10 @@ export default {
     /* wwEditor:start */
     async fetchCollection(collection) {
         try {
-            const result = eval(collection.config.js);
-            return { data: result, error: null };
+            return {
+                data: await eval(`(async () => {${collection.config.js}})()`),
+                error: null,
+            };
         } catch (err) {
             return { data: null, error: err };
         }
