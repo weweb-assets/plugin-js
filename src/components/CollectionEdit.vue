@@ -1,7 +1,7 @@
 <template>
     <div class="js-collection-edit">
         <wwEditorFormRow label="Javascript code">
-            <wwCodeEditor name="js-code" :value="content.js" @input="updateContent('js', $event)" />
+            <wwCodeEditor name="js-code" :value="content.js" @input="setProp('js', $event)" />
         </wwEditorFormRow>
     </div>
 </template>
@@ -11,9 +11,6 @@ export default {
     props: {
         plugin: { type: Object, required: true },
         config: { type: Object, required: true },
-    },
-    data() {
-        return {};
     },
     watch: {
         isSetup: {
@@ -35,12 +32,12 @@ export default {
         },
     },
     methods: {
-        updateContent(key, value) {
+        setProp(key, value) {
             this.$emit('update-config', { ...this.content, [key]: value });
         },
     },
     mounted() {
-        this.updateContent('js', this.content.js);
+        this.setProp('js', this.content.js);
     },
 };
 </script>
