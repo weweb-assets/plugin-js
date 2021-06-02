@@ -1,4 +1,4 @@
-# PLUGIN-JS-REQUEST
+# PLUGIN-JAVASCRIPT
 
 This is a plugin for Weweb.
 
@@ -12,4 +12,4 @@ To serve locally, run yarn serve --port=[PORT], and then go to Weweb editor, ope
 
 ## Build
 
-Before release, you can check build error by running yarn build --name=plugin-js-request
+Before release, you can check build error by running yarn build --name=plugin-javascript

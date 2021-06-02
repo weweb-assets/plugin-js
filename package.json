@@ -1,8 +1,8 @@
 {
-    "name": "plugin-js-request",
+    "name": "plugin-javascript",
     "repository": {
         "type": "git",
-        "url": "https://github.com/weweb-assets/plugin-js-request"
+        "url": "https://github.com/weweb-assets/plugin-javascript"
     },
     "version": "2.0.0",
     "license": "MIT",

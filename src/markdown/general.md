@@ -2,4 +2,4 @@
 
 This plugin will add:
 
-JS Request as a collection source
+Javascript as a collection source
