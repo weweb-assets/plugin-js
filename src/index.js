@@ -15,15 +15,9 @@ export default {
         Collection API
     \================================================================================================*/
     /* wwEditor:start */
-    async fetchCollection(collection) {
-        try {
-            return {
-                data: await eval(`(async () => {${collection.config.js}})()`),
-                error: null,
-            };
-        } catch (err) {
-            return { data: null, error: err };
-        }
+    // eslint-disable-next-line no-unused-vars
+    async fetchCollection(_collection) {
+        return { data: null, error: null };
     },
     /* wwEditor:end */
 };
