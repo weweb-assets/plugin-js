@@ -1,3 +1,16 @@
-<iframe src="https://www.youtube-nocookie.com/embed/76CMCIW-wGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Here, you can write a JS script that will be executed.
 
-Select a table from a base to fetch your data.
+Any data returned by the script will be used as a collection source in WeWeb.
+
+- The [axios](https://axios-http.com/) library is provided for you to query APIs easily.
+- This script will run as an `async` function. You can `await` data and you need to `return` the data at the end.
+
+Example script :
+
+```jsx
+const url = 'https://pokeapi.co/api/v2/pokemon?limit=100&offset=200';
+
+const response = await axios.get(url);
+
+return response.data.results;
+```
