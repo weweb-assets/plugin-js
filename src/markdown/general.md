@@ -1,4 +1,4 @@
-Query any API or webservice using Javascript and [axios](https://axios-http.com/)!
+Query any API or webservice using Javascript and <a href="https://axios-http.com/" target="_blank" class="ww-editor-link">axios</a>!
 
 This plugin will let you:
 
