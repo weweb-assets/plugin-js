@@ -16,8 +16,15 @@ export default {
     \================================================================================================*/
     /* wwEditor:start */
     // eslint-disable-next-line no-unused-vars
-    async fetchCollection(_collection) {
-        return { data: null, error: null };
+    async fetchCollection(collection) {
+        try {
+            return {
+                data: await eval(`(async () => {${collection.config.js}})()`),
+                error: null,
+            };
+        } catch (err) {
+            return { data: null, error: err };
+        }
     },
     /* wwEditor:end */
 };
