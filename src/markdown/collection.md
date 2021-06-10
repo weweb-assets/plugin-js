@@ -1,3 +1,5 @@
+# How to configure a Javascript collection
+
 Here, you can write a JS script that will be executed.
 
 Any data returned by the script will be used as a collection source in WeWeb.
