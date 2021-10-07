@@ -1,7 +1,7 @@
 <template>
     <div class="javascript-collection-edit">
         <wwEditorFormRow label="Javascript code">
-            <wwCodeEditor name="js-code" :model-value="content.js" @update:modelValue="setProp('js', $event)" />
+            <wwEditorInputCode name="js-code" :model-value="content.js" @update:modelValue="setProp('js', $event)" />
         </wwEditorFormRow>
     </div>
 </template>
