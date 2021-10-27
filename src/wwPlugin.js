@@ -7,8 +7,6 @@ export default {
     /*=============================================m_ÔÔ_m=============================================\
         Collection API
     \================================================================================================*/
-    /* wwEditor:start */
-    // eslint-disable-next-line no-unused-vars
     async fetchCollection(collection) {
         try {
             return {
@@ -19,5 +17,4 @@ export default {
             return { data: null, error: err };
         }
     },
-    /* wwEditor:end */
 };
