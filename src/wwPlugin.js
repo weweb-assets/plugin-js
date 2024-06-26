@@ -7,7 +7,7 @@ export default {
     /*=============================================m_ÔÔ_m=============================================\
         Collection API
     \================================================================================================*/
-    async fetchCollection(collection) {
+    async _fetchCollection(collection) {
         try {
             return {
                 data: await eval(`(async () => {${collection.config.js}})()`),
